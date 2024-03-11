@@ -6,15 +6,12 @@
 
     <title>Bandeau Violet avec Image</title>
     <link rel="stylesheet" href="style.css">
-   
-    
-     
 </head>
+
 <body>
     <div class="bandeau">
 
         <img class="image-gauche" src="https://www.ecole-pmn.fr/wp-content/themes/fitec2022/images/logo-pmn2022.png" alt="LogoPMN">
-
 
         <div class="liens-droite">
             <a href="#">Formation</a>
@@ -30,7 +27,10 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> af5224673ccea005214a872aae3cbcf80dc0b052
     <div class="carousel">
         <ul>
             <li>
@@ -53,6 +53,7 @@
         <div class="carousel-btn prev-btn">&#10094;</div>
         <div class="carousel-btn next-btn">&#10095;</div>
     </div>
+
     <script>
         const carousel = document.querySelector('.carousel');
         const carouselList = carousel.querySelector('ul');
@@ -66,10 +67,12 @@
         function goToSlide(index) {
             console.log('Bouton Suivant cliqué');
 
+
             carouselList.style.transform = `translateX(-${index * slideWidth}px)`;
             currentIndex = index;
+
         }
-    
+
         function slideNext() {
             console.log('Bouton Suivant cliqué');
 
@@ -102,22 +105,17 @@
             <strong><span>7 700 personnes</span> formées par an :</strong>
         </div>
         <div class="section2">
-            <div class="lien-foot">
-                <a href="https://www.groupefitec.fr/" target="_blank">
-                    <img class="lien-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_GroupeFitec_V3_Black.png" />
-                </a>
+            <div class="liens-foot">
+                <a href="https://www.groupefitec.fr/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_GroupeFitec_V3_Black.png" /></a>
             </div>
-            <div class="lien-foot">
-                <a href="https://www.fitec.fr/" target="_blank"><img class="lien-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Fitec_V3_Black_RVB.png" /></a>
+            <div class="liens-foot">
+                <a href="https://www.fitec.fr/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Fitec_V3_Black_RVB.png" /></a>
             </div>
 
-            <div class="lien-foot">
-                <a href="https://www.evocime.com/" target="_blank"><img class="lien-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Evocime_Main-orange-1.png" /></a>
+            <div class="liens-foot">
+                <a href="https://www.evocime.com/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Evocime_Main-orange-1.png" /></a>
             </div>
         </div>
     </div>
-
-
-    
 </body>
 </html>
