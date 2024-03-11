@@ -1,0 +1,52 @@
+.bandeau{
+    background-color: #6b488b;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex; 
+    align-items: center; 
+}
+
+.carousel {
+    width: 100%; /* Largeur de la page */
+    overflow: hidden;
+    position: relative;
+}
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300%; /* Largeur totale de toutes les images */
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel li {
+    flex: 0 0 33.333%; /* Chaque image occupe 1/3 de la largeur totale */
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+.carousel-btn {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    
+    bottom: 0px; /* Aligner en bas */
+    right: 0px; /* Aligner à droite */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.prev-btn {
+    margin-left: 10px;
+    right:40px;
+    bottom: -28px;
+}
+.next-btn {
+    right: 0px;
+    bottom: -28px;
+    margin-left: 10px;
+
+}
