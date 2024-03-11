@@ -1,0 +1,59 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeau Violet avec Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .bandeau{
+            background-color: #8100f9;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            display: flex; 
+            align-items: center; 
+        }
+        .image-gauche {
+            margin-left: 60px; 
+            margin-right: 50px; 
+            width: 200px;
+            height: auto;
+        }
+        .liens-droite a {
+            color: white; 
+            text-decoration: none; 
+            margin-left: auto; 
+        }
+        .boutons-droite {
+            display: flex;
+            flex-direction: column; 
+        }
+        .boutons-droite button {
+            margin-top: 20px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bandeau">
+
+        <img class="image-gauche" src="https://www.ecole-pmn.fr/wp-content/themes/fitec2022/images/logo-pmn2022.png" alt="LogoPMN">
+
+
+        <div class="liens-droite">
+            <a href="#">Formation</a>
+            <a href="#">La Passerelle</a>
+            <a href="#">Financement</a>
+            <a href="#">Actualités</a>
+            <a href="#">Evenements</a>
+            <a href="#">Contact</a>
+            <button class="boutons-droite">CANDIDATURE</button>
+            <button class="boutons-droite">ENTREPRISE</button>
+        </div>
+    </div>
+</body>
+</html>
