@@ -3,20 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandeau Violet avec Image</title>
+    <link rel="stylesheet" href="style.css">
+   
     <style>
         body {
             margin: 0;
             padding: 0;
         }
-        .bandeau{
-            background-color: #8100f9;
-            width: 100%;
-            height: 100px;
-            padding: 20px;
-            color: white;
-            display: flex; 
-            align-items: center; 
-        }
+       
         .image-gauche {
             margin-left: 60px; 
             margin-right: 50px; 
@@ -44,6 +38,7 @@
         }
 
     </style>
+     
 </head>
 <body>
     <div class="bandeau">
@@ -64,5 +59,56 @@
             <button class="boutons-droite">ENTREPRISE</button>
         </div>
     </div>
+    
+    <div class="carousel">
+        <ul>
+            <li><img src="https://www.ecole-pmn.fr/wp-content/uploads/2022/02/AdobeStock_306331004-1-1-1900x860.jpg" alt="Image 1"></li>
+            <li><img src="https://www.ecole-pmn.fr/wp-content/uploads/2023/03/PMN-DATA-1900x860.jpg" alt="Image 2"></li>
+            <li><img src="https://www.ecole-pmn.fr/wp-content/uploads/2022/05/PMN-STUDENT-1-1-light-1900x860.jpg" alt="Image 3"></li>
+        </ul>
+        <div class="carousel-btn prev-btn">&#10094;</div>
+        <div class="carousel-btn next-btn">&#10095;</div>
+    </div>
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const carouselList = carousel.querySelector('ul');
+        const prevBtn = carousel.querySelector('.prev-btn');
+        const nextBtn = carousel.querySelector('.next-btn');
+        const slides = carousel.querySelectorAll('li');
+        const slideWidth = slides[0].clientWidth;
+    
+        let currentIndex = 0;
+    
+        function goToSlide(index) {
+            console.log('Bouton Suivant cliqué');
+
+            carouselList.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+    
+        function slideNext() {
+            console.log('Bouton Suivant cliqué');
+
+            if (currentIndex < slides.length - 1) {
+                goToSlide(currentIndex + 1);
+            } else {
+                goToSlide(0);
+            }
+        }
+    
+        function slidePrev() {
+            console.log('Bouton Suivant cliqué');
+
+            if (currentIndex > 0) {
+                goToSlide(currentIndex - 1);
+            } else {
+                goToSlide(slides.length - 1);
+            }
+        }
+    
+        nextBtn.addEventListener('click', slideNext);
+        prevBtn.addEventListener('click', slidePrev);
+
+    </script>
 </body>
 </html>
