@@ -2,6 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" type="texte/css">
+
     <title>Bandeau Violet avec Image</title>
     <style>
         body {
@@ -55,5 +57,60 @@
             <button class="boutons-droite">ENTREPRISE</button>
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <div class="content-section">
+        <div class="content-section1">
+            <strong>L'école pmn fait partie du groupe Fitec</strong>
+            <strong><span>7 700 personnes</span> formées par an :</strong>
+        </div>
+        <div class="section2">
+            <div class="liens-foot">
+                <a href="https://www.groupefitec.fr/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_GroupeFitec_V3_Black.png" /></a>
+            </div>
+            <div class="liens-foot">
+                <a href="https://www.fitec.fr/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Fitec_V3_Black_RVB.png" /></a>
+            </div>
+
+            <div class="liens-foot">
+                <a href="https://www.evocime.com/" target="_blank"><img class="liens-foot" src="https://www.ecole-pmn.fr/wp-content/uploads/2023/07/Logo_Evocime_Main-orange-1.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+.content-section {
+            display: flex;
+            flex-direction: row;
+            background-color: blue;
+            width: 100%;
+            padding: 20px;
+            font-size: 50;
+            margin-top: 10;
+            bottom: 0;
+            position: absolute;
+            align-items: center;
+        }
+
+        .content-section1 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .section2 {
+            padding: 10px;
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            background-color: yellow;
+        }
+
+        .lien-foot {
+            width: 20%;
+            height: 20%;
+        }
+    </style>
 </body>
 </html>
