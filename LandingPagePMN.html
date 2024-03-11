@@ -11,6 +11,7 @@
         .bandeau{
             background-color: #8100f9;
             width: 100%;
+            height: 100px;
             padding: 20px;
             color: white;
             display: flex; 
@@ -19,23 +20,29 @@
         .image-gauche {
             margin-left: 60px; 
             margin-right: 50px; 
-            width: 200px;
+            width: 250px;
             height: auto;
         }
         .liens-droite a {
             color: white; 
             text-decoration: none; 
             margin-left: auto; 
+            margin-right: 20px;
+            align-items: center;
         }
         .boutons-droite {
             display: flex;
             flex-direction: column; 
+            width: 110px;
+            margin-top: 20px;
+
+
         }
-        .boutons-droite button {
-            margin-top: 20px; 
+        .boutons-container {
             margin-left: auto; 
-            margin-right: auto;
+            padding-right: 50px;
         }
+
     </style>
 </head>
 <body>
@@ -51,6 +58,8 @@
             <a href="#">Actualités</a>
             <a href="#">Evenements</a>
             <a href="#">Contact</a>
+        </div>
+        <div class="boutons-container"> <!-- Nouvelle div contenant les boutons -->
             <button class="boutons-droite">CANDIDATURE</button>
             <button class="boutons-droite">ENTREPRISE</button>
         </div>
