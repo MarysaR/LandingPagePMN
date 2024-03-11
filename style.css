@@ -1,0 +1,110 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-gauche {
+    margin-left: 60px; 
+    margin-right: 50px; 
+    width: 20%;
+    height: auto;
+}
+.liens-droite a {
+    color: white; 
+    text-decoration: none; 
+    margin-left: auto; 
+    margin-right: 20px;
+    align-items: center;
+    font-size: 20px;
+}
+.boutons-droite {
+    display: flex;
+    flex-direction: column; 
+    width: 150px;
+    margin-top: 20px;
+    height: 30px;
+    text-align: center;
+
+
+}
+.boutons-container {
+    margin-left: auto; 
+    padding-right: 50px;
+}
+
+.bandeau{
+    background-color: #6b488b;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex; 
+    align-items: center; 
+}
+
+.carousel {
+    width: 100%; /* Largeur de la page */
+    overflow: hidden;
+    position: relative;
+}
+.carousel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300%; /* Largeur totale de toutes les images */
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel li {
+    flex: 0 0 33.333%; 
+    position: relative;
+
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+.carousel-btn {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.prev-btn {
+    margin-left: 10px;
+    right:40px;
+    bottom: -28px;
+}
+.next-btn {
+    right: 0px;
+    bottom: -28px;
+    margin-left: 10px;
+}
+.carousel-text {
+    position: absolute;
+color: white;
+font-size: 36px;
+    bottom: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+    padding: 5px 10px;
+    max-width: 33%;
+}
+
+.carousel-link {
+    position: absolute;
+    background-color: greenyellow;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+    right: 1;
+
+    top: 44%;
+    padding: 5px 10px;
+}
