@@ -5,40 +5,10 @@
     <link rel="stylesheet" media="screen and (max-width: 640px)" type="texte/css">
 
     <title>Bandeau Violet avec Image</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        .bandeau{
-            background-color: #8100f9;
-            width: 100%;
-            padding: 20px;
-            color: white;
-            display: flex; 
-            align-items: center; 
-        }
-        .image-gauche {
-            margin-left: 60px; 
-            margin-right: 50px; 
-            width: 200px;
-            height: auto;
-        }
-        .liens-droite a {
-            color: white; 
-            text-decoration: none; 
-            margin-left: auto; 
-        }
-        .boutons-droite {
-            display: flex;
-            flex-direction: column; 
-        }
-        .boutons-droite button {
-            margin-top: 20px; 
-            margin-left: auto; 
-            margin-right: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
+    
+     
 </head>
 <body>
     <div class="bandeau">
@@ -53,10 +23,13 @@
             <a href="#">Actualités</a>
             <a href="#">Evenements</a>
             <a href="#">Contact</a>
+        </div>
+        <div class="boutons-container"> 
             <button class="boutons-droite">CANDIDATURE</button>
             <button class="boutons-droite">ENTREPRISE</button>
         </div>
     </div>
+
 
     <!-- FOOTER -->
     <div class="content-section">
@@ -78,6 +51,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <style>
 
@@ -93,6 +67,10 @@
             position: absolute;
             align-items: center;
 =======
+=======
+
+    
+>>>>>>> df79f3165aebbf368be7876aa3356e756e90f50f
     <div class="carousel">
         <ul>
             <li>
@@ -127,30 +105,43 @@
     
         function goToSlide(index) {
             console.log('Bouton Suivant cliqué');
+<<<<<<< HEAD
 
             carouselList.style.transform = `translateX(-${index * slideWidth}px)`;
             currentIndex = index;
 >>>>>>> Stashed changes
         }
+=======
+>>>>>>> df79f3165aebbf368be7876aa3356e756e90f50f
 
-        .content-section1 {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            carouselList.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
         }
+    
+        function slideNext() {
+            console.log('Bouton Suivant cliqué');
 
-        .section2 {
-            padding: 10px;
-            width: 30%;
-            display: flex;
-            flex-direction: row;
-            background-color: yellow;
+            if (currentIndex < slides.length - 1) {
+                goToSlide(currentIndex + 1);
+            } else {
+                goToSlide(0);
+            }
         }
+    
+        function slidePrev() {
+            console.log('Bouton Suivant cliqué');
 
-        .lien-foot {
-            width: 20%;
-            height: 20%;
+            if (currentIndex > 0) {
+                goToSlide(currentIndex - 1);
+            } else {
+                goToSlide(slides.length - 1);
+            }
         }
-    </style>
+    
+        nextBtn.addEventListener('click', slideNext);
+        prevBtn.addEventListener('click', slidePrev);
+
+    </script>
+
 </body>
 </html>
